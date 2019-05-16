@@ -1,0 +1,23 @@
+div {
+    background: linear-gradient(rgb(151, 16, 204), blue);
+    width: 550px;
+    margin: 0 auto;
+    color: white;
+}
+
+h1 {
+    color: yellow;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h1:after {
+    content: "ᐅ";
+    font-size: 0.8em;
+}
+
+li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
