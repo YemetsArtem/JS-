@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(209, 209, 209);
+    background-color: rgb(41, 41, 41);
+}
+
+p {
+    margin: 0;
+}
+
+.disableSelection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+}
+
+/* HEADER */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    background-color: rgb(41, 41, 41);
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+    line-height: 70px;
+    height: 70px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li:hover {
+    color: white;
+    background-color: blueviolet;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links li:active {
+    color: white;
+    background-color: rgb(86, 30, 138);
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.logo {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.logo:active {
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+/* MAIN CONTAINER */
+.cards_container,
+.cards_container-playlist {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+
+.card {
+    flex-basis: 300px;
+    max-height: 550px;
+    margin: 20px 20px;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px 0px blueviolet;
+    transition: 0.2s ease-in-out;
+}
+
+.card_title {
+    font-size: 20px;
+}
+
+.card_author-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 20px;
+}
+
+.card_image {
+    margin-bottom: 15px;
+}
+
+.toPlaylist-button {
+    height: 25px;
+    background-color: blueviolet;
+    outline: none;
+    border: 0;
+    color: wheat;
+    cursor: pointer;
+}
+
+.delete-button {
+    height: 25px;
+    background-color: blueviolet;
+    outline: none;
+    border: 0;
+    color: wheat;
+    cursor: pointer;
+    background-color: rgba(255, 72, 0, 0.842);
+}
+
+.delete-button:active {
+    transition: 0.1s ease-in-out;
+    background-color: rgba(195, 64, 12, 0.842);
+}
+
+.toPlaylist-button:active {
+    transition: 0.1s ease-in-out;
+    background-color: rgb(86, 30, 138);
+}
